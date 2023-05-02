@@ -78,9 +78,9 @@
             width: 250px;
             background-color: #555;
             color: #fff;
-            text-align: center;
+            text-align: left;
             border-radius: 6px;
-            padding: 5px;
+            padding: 25px;
             position: absolute;
             z-index: 1;
             bottom: 125%; /* Position the tooltip above the button */
@@ -107,9 +107,20 @@
             color: #8ec8f7; 
         }
 
-        .tooltip.show .tooltiptext {
+        .tooltip.show .tooltiptext {;
             visibility: visible;
             opacity: 1;
+        }
+        @keyframes ellipsis {
+            0%  { content: " .  "; }
+            33% { content: " .. "; }
+            66% { content: " ..."; }
+        }
+
+        .ellipsis::after {
+            content: "";
+            display: inline-block;
+            animation: ellipsis 1.2s infinite;
         }
     </style>
 </head>
@@ -125,7 +136,7 @@
             </div>
         </a>
         <div class="tooltiptext">
-            <p>Opening in Processing...</p>
+            <p><span class="ellipsis">Opening in Processing</span></p>
             <p>If nothing happens, <a href="https://processing.org/download/" target="_blank">download Processing</a> and try again.</p>
         </div>
     </div>
