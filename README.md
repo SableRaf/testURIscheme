@@ -19,6 +19,11 @@ This repository contains a simple demonstration of the `pde://` protocol, introd
 
 The `pde://` protocol allows for seamless integration between web pages and the Processing IDE by using a custom URI scheme. This scheme is installed on your Operating System the first time you launch the PDE on your machine. This demo showcases how to implement this feature to provide a better user experience when working with the `pde://` protocol.
 
+
+## About the `.pdez` File Format
+
+The `.pdez` file format is a compressed archive that contains a Processing sketch and any associated files. This format is used to package sketches for distribution and sharing. The `sketchBundle.pdez` file included in this repository contains a simple Processing sketch. To create your own `.pdez` file, compress your sketch folder into a `.zip` archive and rename it to `.pdez`.
+
 *Note: this is a simplistic example. In a real-world scenario, you would likely want to split the code into separate files.*
 
 ## Contributions
