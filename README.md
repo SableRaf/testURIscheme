@@ -19,6 +19,8 @@ This repository contains a simple demonstration of the `pde://` protocol, introd
 
 The `pde://` protocol allows for seamless integration between web pages and the Processing IDE by using a custom URI scheme. This scheme is installed on your Operating System the first time you launch the PDE on your machine. This demo showcases how to implement this feature to provide a better user experience when working with the `pde://` protocol.
 
+*Note: this is a simplistic example. In a real-world scenario, you would likely want to split the code into separate files.*
+
 ## Contributions
 
 Feel free to open issues or submit pull requests if you'd like to contribute to this project.
